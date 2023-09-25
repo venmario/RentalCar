@@ -1,0 +1,281 @@
+/* font */
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.body-10-light {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 14px;
+}
+.body-10-reguler {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+}
+.body-10-bold {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+}
+.body-12-light {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+.body-12-reguler {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.body-12-bold {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+.body-14-light {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+.body-14-reguler {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.body-14-bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.title-16-light {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.title-16-reguler {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.title-16-bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.title-18-light {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+}
+.title-18-reguler {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+.title-18-bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.heading-20-light {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+.heading-20-reguler {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.heading-20-bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.heading-24-light {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+}
+.heading-24-reguler {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+.heading-24-bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+/* font */
+
+.navbar-aliceblue {
+  background-color: #f1f3ff;
+}
+.nav-link__register {
+  padding: 10px 15px;
+  background-color: #5cb85f;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.btn-success {
+  background-color: #5cb85f;
+  border-color: #5cb85f;
+  font-weight: bolder;
+}
+.nav-link__register:hover {
+  background-color: #308d33;
+}
+
+.hero {
+  height: 416px;
+}
+
+.hero-aliceblue {
+  background-color: #f1f3ff;
+}
+
+.hero-title {
+  font-size: 36px !important;
+  line-height: 54px !important;
+}
+
+.hero__left {
+  margin-left: auto;
+  width: 46%;
+}
+
+.hero__right {
+  width: 50%;
+}
+
+.hero__right-img {
+  z-index: 99;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.hero__right-box {
+  background-color: #0d28a6;
+  height: 243px;
+  border-radius: 20px 20px 0 0;
+}
+
+.our-section__right-list > li > svg {
+  background-color: #f1f3ff;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 3px;
+  color: #0d28a6;
+}
+
+.why-us-section {
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  width: 23%;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(58%);
+}
+
+.carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-58%);
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.carousel-item.active .carousel-card:nth-child(1) {
+  margin-left: -50%;
+}
+.carousel-item.active .carousel-card:nth-child(3) {
+  margin-right: -50%;
+}
+.carousel-item.active .carousel-card:nth-child(2) {
+  width: 80%;
+}
+
+.carousel-card {
+  height: 300px;
+  width: 100%;
+  background-color: #f1f3ff;
+  border-radius: 8px;
+  display: flex;
+  margin-right: 20px;
+}
+
+.carousel-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+.carousel-card-content-picture {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-card-content-bio {
+  /* width: 70%; */
+}
+
+.button-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.button-carousel button {
+  position: static;
+  width: 5%;
+}
+
+.carousel-control-next-icon {
+  color: black;
+}
+
+.cta-banner {
+  border-radius: 13px;
+  /* height: 326px; */
+  background-color: #0d28a6;
+}
+
+.faq {
+}
+
+.faq-text {
+  width: 40%;
+}
+.faq-list {
+  width: 60%;
+}
+
+.sosmed-icons {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-logo {
+  width: 40%;
+  height: 34px;
+  background-color: #0d28a6;
+}
