@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-aliceblue py-4">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-aliceblue py-4">
       <div class="container">
         <a class="navbar-brand" href="#">Binar Rental Car</a>
         <button
@@ -50,26 +50,29 @@
     </nav>
     <section id="hero" class="hero hero-aliceblue">
       <div class="row h-100 w-100 ms-0">
-        <div class="col-md-6 hero__left">
-          <h1 class="mt-5 heading-24-bold hero-title">
-            Sewa & Rental Terbaik di kawasan (Lokasimu)
-          </h1>
-          <p class="w-75 my-3 body-14-light">
-            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
-            terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
-            untuk sewa mobil selama 24 jam.
-          </p>
-          <button class="btn btn-success">Mulai Sewa Mobil</button>
+        <div class="col-lg-6">
+          <div class="hero__left pt-lg-5">
+            <h1 class="mt-5 heading-24-bold hero-title">
+              Sewa & Rental Terbaik di kawasan (Lokasimu)
+            </h1>
+            <p class="w-75 my-3 body-14-light">
+              Selamat datang di Binar Car Rental. Kami menyediakan mobil
+              kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+              kebutuhanmu untuk sewa mobil selama 24 jam.
+            </p>
+            <button class="btn btn-success">Mulai Sewa Mobil</button>
+          </div>
         </div>
-        <div class="col-md-6 position-relative hero__right">
+        <div class="col-lg-6 position-relative hero__right py-3">
           <img
-            src="https://i.ibb.co/vz2jCYq/ca.png"
-            class="hero__right-img img-fluid position-absolute start-0 bottom-0"
+            src="https://i.ibb.co/wN6YJNV/ca.png"
+            class="hero__right-img"
             alt="car"
           />
-          <div
+          <!-- <div
             class="hero__right-box position-absolute w-100 start-0 bottom-0"
-          ></div>
+          ></div> -->
+          <div class="hero__right-box"></div>
         </div>
       </div>
     </section>
@@ -682,7 +685,7 @@
         </button>
       </div>
     </section>
-    <section class="cta-banner-section py-5">
+    <section class="cta-banner-section py-5 px-3 px-md-0">
       <div class="cta-banner container py-5">
         <h1 class="text-center text-white mb-4 heading-24-bold hero-title">
           Sewa Mobil di (Lokasimu) Sekarang
@@ -867,22 +870,22 @@
         </div>
       </div>
     </section>
-    <section class="footer-section container py-5">
-      <div class="d-flex">
-        <div class="address w-25 body-14-light">
+    <section class="footer-section container py-5 px-3 px-md-0">
+      <div class="row">
+        <div class="address body-14-light col-md-3">
           <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
           <p>binarcarrental@gmail.com</p>
           <p>081-233-334-808</p>
         </div>
-        <div class="navigation w-25">
-          <ul class="list-group list-group-flush w-75 mx-auto">
-            <li class="list-group-item border-0 pt-0">Our services</li>
-            <li class="list-group-item border-0">Why Us</li>
-            <li class="list-group-item border-0">Testimonial</li>
-            <li class="list-group-item border-0">FAQ</li>
+        <div class="navigation col-md-3">
+          <ul class="list-group list-group-flush w-75 mx-md-auto">
+            <li class="list-group-item border-0 pt-0 ps-0">Our services</li>
+            <li class="list-group-item border-0 ps-0">Why Us</li>
+            <li class="list-group-item border-0 ps-0">Testimonial</li>
+            <li class="list-group-item border-0 ps-0">FAQ</li>
           </ul>
         </div>
-        <div class="sosmed w-25">
+        <div class="sosmed col-md-3 mb-3">
           <p class="body-14-light">Connect with us</p>
           <div class="sosmed-icons">
             <svg
@@ -981,7 +984,7 @@
             </svg>
           </div>
         </div>
-        <div class="copyright w-25">
+        <div class="copyright col-md-3">
           <p class="body-14-light">Copyright Binar 2022</p>
           <div class="copyright-logo"></div>
         </div>

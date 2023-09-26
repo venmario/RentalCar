@@ -111,6 +111,8 @@ body {
 
 /* font */
 
+/* mobile */
+
 .navbar-aliceblue {
   background-color: #f1f3ff;
 }
@@ -131,7 +133,7 @@ body {
 }
 
 .hero {
-  height: 416px;
+  /* height: 80vh; */
 }
 
 .hero-aliceblue {
@@ -145,23 +147,38 @@ body {
 
 .hero__left {
   margin-left: auto;
-  width: 46%;
+  width: 90%;
 }
 
 .hero__right {
-  width: 50%;
+  /* height: 50%; */
 }
 
 .hero__right-img {
-  z-index: 99;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  /* z-index: 99; */
+  /* /* position: absolute; */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  transform: scaleX(-1) translateX(50%) translateY(-50%);
+  /* transform: scaleX(-1); */
+  width: 90%;
+  z-index: 1;
 }
 
 .hero__right-box {
   background-color: #0d28a6;
-  height: 243px;
-  border-radius: 20px 20px 0 0;
+  height: 50%;
+  border-radius: 20px 0 0 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  /* right: 0; */
+  bottom: 0;
+  /* top: auto; */
+  z-index: 0;
 }
 
 .our-section__right-list > li > svg {
@@ -269,4 +286,16 @@ body {
   width: 40%;
   height: 34px;
   background-color: #0d28a6;
+}
+/* tab */
+/* @media screen and (min-width: 768px) {
+  .hero {
+    height: 460px;
+  }
+} */
+/* desktop */
+@media screen and (min-width: 992px) {
+  .hero {
+    height: 416px;
+  }
 }
