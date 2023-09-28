@@ -14,36 +14,67 @@
       href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top navbar-aliceblue py-4">
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">Binar Rental Car</a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link ms-2 body-14-reguler" href="#ourservice"
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title body-14-bold" id="offcanvasNavbarLabel">BCR</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+              <a class="nav-link ms-2 body-14-reguler" href="#ourservice"
               >Our Services</a
             >
+          </li>
+          <li class="nav-item">
             <a class="nav-link ms-2 body-14-reguler" href="#whyus">Why Us</a>
-            <a class="nav-link ms-2 body-14-reguler" href="#testimonials"
-              >Testimonials</a
-            >
-            <a class="nav-link ms-2 body-14-reguler" href="#faq">FAQ</a>
-            <a class="btn btn-success body-14-bold ms-3 py-2" href="#"
-              >Registers</a
-            >
+
+          </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2 body-14-reguler" href="#testimonials"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2 body-14-reguler" href="#faq">FAQ</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-success body-14-bold ms-lg-3 py-2" href="#"
+                >Registers</a
+              >
+            </li>
           </div>
         </div>
       </div>
@@ -55,7 +86,7 @@
             <h1 class="mt-5 heading-24-bold hero-title">
               Sewa & Rental Terbaik di kawasan (Lokasimu)
             </h1>
-            <p class="w-75 my-3 body-14-light">
+            <p class="w-100 w-md-75 my-3 body-14-light">
               Selamat datang di Binar Car Rental. Kami menyediakan mobil
               kualitas terbaik dengan harga terjangkau. Selalu siap melayani
               kebutuhanmu untuk sewa mobil selama 24 jam.
@@ -357,332 +388,378 @@
       <p class="text-center body-14-light">
         Berbagai review positif dari para pelanggan kami
       </p>
-      <div id="carouselExample" class="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-card py-4 px-5">
-              <div class="carousel-card-content-picture">
-                <img
-                  src="https://i.ibb.co/vvDxbdh/img-photo.png"
-                  class="rounded img-fluid border-0"
-                  alt="pic"
-                />
-              </div>
-              <div class="carousel-card-content">
-                <div class="carousel-card-rating">
-                  <svg
-                    width="80"
-                    height="16"
-                    viewBox="0 0 80 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
-                      fill="#F9CC00"
-                    />
-                  </svg>
-                </div>
-
-                <div class="carousel-card-content-bio body-14-light">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod"
-                </div>
-                <div class="carousel-card-borndate">
-                  <p class="fw-bolder body-14-reguler">Slide 1, Bromo</p>
-                </div>
-              </div>
+      <div class="owl-carousel px-3 px-md-0">
+        <div class="item">
+          <div class="carousel-card py-4 px-5">
+            <div class="carousel-card-content-picture">
+              <img
+                src="https://i.ibb.co/vvDxbdh/img-photo.png"
+                class="rounded img-fluid border-0"
+                alt="pic"
+              />
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-card py-4 px-5">
-              <div class="carousel-card-content-picture">
-                <img
-                  src="https://i.ibb.co/xHWD3kn/img-photo-1.png"
-                  class="rounded img-fluid border-0"
-                  alt="pic"
-                />
+            <div class="carousel-card-content">
+              <div class="carousel-card-rating">
+                <svg
+                  width="80"
+                  height="16"
+                  viewBox="0 0 80 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
+                    fill="#F9CC00"
+                  />
+                </svg>
               </div>
-              <div class="carousel-card-content">
-                <div class="carousel-card-rating">
-                  <svg
-                    width="80"
-                    height="16"
-                    viewBox="0 0 80 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
-                      fill="#F9CC00"
-                    />
-                  </svg>
-                </div>
 
-                <div class="carousel-card-content-bio body-14-light">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod"
-                </div>
-                <div class="carousel-card-borndate">
-                  <p class="fw-bolder body-14-reguler">Slide 2, Bromo</p>
-                </div>
+              <div class="carousel-card-content-bio body-14-light">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod"
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-card py-4 px-5">
-              <div class="carousel-card-content-picture">
-                <img
-                  src="https://i.ibb.co/vvDxbdh/img-photo.png"
-                  class="rounded img-fluid border-0"
-                  alt="pic"
-                />
-              </div>
-              <div class="carousel-card-content">
-                <div class="carousel-card-rating">
-                  <svg
-                    width="80"
-                    height="16"
-                    viewBox="0 0 80 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
-                      fill="#F9CC00"
-                    />
-                  </svg>
-                </div>
-
-                <div class="carousel-card-content-bio body-14-light">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod"
-                </div>
-                <div class="carousel-card-borndate">
-                  <p class="fw-bolder body-14-reguler">Slide 3, Bromo</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-card py-4 px-5">
-              <div class="carousel-card-content-picture">
-                <img
-                  src="https://i.ibb.co/xHWD3kn/img-photo-1.png"
-                  class="rounded img-fluid border-0"
-                  alt="pic"
-                />
-              </div>
-              <div class="carousel-card-content">
-                <div class="carousel-card-rating">
-                  <svg
-                    width="80"
-                    height="16"
-                    viewBox="0 0 80 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
-                      fill="#F9CC00"
-                    />
-                  </svg>
-                </div>
-
-                <div class="carousel-card-content-bio body-14-light">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod"
-                </div>
-                <div class="carousel-card-borndate">
-                  <p class="fw-bolder body-14-reguler">Slide 4, Bromo</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-card py-4 px-5">
-              <div class="carousel-card-content-picture">
-                <img
-                  src="https://i.ibb.co/vvDxbdh/img-photo.png"
-                  class="rounded img-fluid border-0"
-                  alt="pic"
-                />
-              </div>
-              <div class="carousel-card-content">
-                <div class="carousel-card-rating">
-                  <svg
-                    width="80"
-                    height="16"
-                    viewBox="0 0 80 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
-                      fill="#F9CC00"
-                    />
-                    <path
-                      d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
-                      fill="#F9CC00"
-                    />
-                  </svg>
-                </div>
-
-                <div class="carousel-card-content-bio body-14-light">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod"
-                </div>
-                <div class="carousel-card-borndate">
-                  <p class="fw-bolder body-14-reguler">Slide 5, Bromo</p>
-                </div>
+              <div class="carousel-card-borndate">
+                <p class="fw-bolder body-14-reguler">Slide 1, Bromo</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="button-carousel py-3">
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="16" cy="16" r="15.5" fill="white" stroke="#C4C4C4" />
-            <path
-              d="M18.5 21L13.5 16L18.5 11"
-              stroke="#222222"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+        <div class="item">
+          <div class="carousel-card py-4 px-5">
+            <div class="carousel-card-content-picture">
+              <img
+                src="https://i.ibb.co/xHWD3kn/img-photo-1.png"
+                class="rounded img-fluid border-0"
+                alt="pic"
+              />
+            </div>
+            <div class="carousel-card-content">
+              <div class="carousel-card-rating">
+                <svg
+                  width="80"
+                  height="16"
+                  viewBox="0 0 80 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
+                    fill="#F9CC00"
+                  />
+                </svg>
+              </div>
 
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="16" cy="16" r="16" fill="#5CB85F" />
-            <rect
-              width="20"
-              height="20"
-              transform="translate(6 6)"
-              fill="#5CB85F"
-            />
-            <path
-              d="M13.5 21L18.5 16L13.5 11"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+              <div class="carousel-card-content-bio body-14-light">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod"
+              </div>
+              <div class="carousel-card-borndate">
+                <p class="fw-bolder body-14-reguler">Slide 2, Bromo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-card py-4 px-5">
+            <div class="carousel-card-content-picture">
+              <img
+                src="https://i.ibb.co/vvDxbdh/img-photo.png"
+                class="rounded img-fluid border-0"
+                alt="pic"
+              />
+            </div>
+            <div class="carousel-card-content">
+              <div class="carousel-card-rating">
+                <svg
+                  width="80"
+                  height="16"
+                  viewBox="0 0 80 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
+                    fill="#F9CC00"
+                  />
+                </svg>
+              </div>
 
-          <span class="visually-hidden">Next</span>
-        </button>
+              <div class="carousel-card-content-bio body-14-light">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod"
+              </div>
+              <div class="carousel-card-borndate">
+                <p class="fw-bolder body-14-reguler">Slide 3, Bromo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-card py-4 px-5">
+            <div class="carousel-card-content-picture">
+              <img
+                src="https://i.ibb.co/xHWD3kn/img-photo-1.png"
+                class="rounded img-fluid border-0"
+                alt="pic"
+              />
+            </div>
+            <div class="carousel-card-content">
+              <div class="carousel-card-rating">
+                <svg
+                  width="80"
+                  height="16"
+                  viewBox="0 0 80 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
+                    fill="#F9CC00"
+                  />
+                </svg>
+              </div>
+
+              <div class="carousel-card-content-bio body-14-light">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod"
+              </div>
+              <div class="carousel-card-borndate">
+                <p class="fw-bolder body-14-reguler">Slide 4, Bromo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-card py-4 px-5">
+            <div class="carousel-card-content-picture">
+              <img
+                src="https://i.ibb.co/xHWD3kn/img-photo-1.png"
+                class="rounded img-fluid border-0"
+                alt="pic"
+              />
+            </div>
+            <div class="carousel-card-content">
+              <div class="carousel-card-rating">
+                <svg
+                  width="80"
+                  height="16"
+                  viewBox="0 0 80 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
+                    fill="#F9CC00"
+                  />
+                </svg>
+              </div>
+
+              <div class="carousel-card-content-bio body-14-light">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod"
+              </div>
+              <div class="carousel-card-borndate">
+                <p class="fw-bolder body-14-reguler">Slide 5, Bromo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-card py-4 px-5">
+            <div class="carousel-card-content-picture">
+              <img
+                src="https://i.ibb.co/vvDxbdh/img-photo.png"
+                class="rounded img-fluid border-0"
+                alt="pic"
+              />
+            </div>
+            <div class="carousel-card-content">
+              <div class="carousel-card-rating">
+                <svg
+                  width="80"
+                  height="16"
+                  viewBox="0 0 80 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
+                    fill="#F9CC00"
+                  />
+                </svg>
+              </div>
+
+              <div class="carousel-card-content-bio body-14-light">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod"
+              </div>
+              <div class="carousel-card-borndate">
+                <p class="fw-bolder body-14-reguler">Slide 6, Bromo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-card py-4 px-5">
+            <div class="carousel-card-content-picture">
+              <img
+                src="https://i.ibb.co/xHWD3kn/img-photo-1.png"
+                class="rounded img-fluid border-0"
+                alt="pic"
+              />
+            </div>
+            <div class="carousel-card-content">
+              <div class="carousel-card-rating">
+                <svg
+                  width="80"
+                  height="16"
+                  viewBox="0 0 80 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M24 0L25.7961 5.52786H31.6085L26.9062 8.94427L28.7023 14.4721L24 11.0557L19.2977 14.4721L21.0938 8.94427L16.3915 5.52786H22.2039L24 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M40 0L41.7961 5.52786H47.6085L42.9062 8.94427L44.7023 14.4721L40 11.0557L35.2977 14.4721L37.0938 8.94427L32.3915 5.52786H38.2039L40 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M56 0L57.7961 5.52786H63.6085L58.9062 8.94427L60.7023 14.4721L56 11.0557L51.2977 14.4721L53.0938 8.94427L48.3915 5.52786H54.2039L56 0Z"
+                    fill="#F9CC00"
+                  />
+                  <path
+                    d="M72 0L73.7961 5.52786H79.6085L74.9062 8.94427L76.7023 14.4721L72 11.0557L67.2977 14.4721L69.0938 8.94427L64.3915 5.52786H70.2039L72 0Z"
+                    fill="#F9CC00"
+                  />
+                </svg>
+              </div>
+
+              <div class="carousel-card-content-bio body-14-light">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod"
+              </div>
+              <div class="carousel-card-borndate">
+                <p class="fw-bolder body-14-reguler">Slide 4, Bromo</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="cta-banner-section py-5 px-3 px-md-0">
@@ -995,20 +1072,69 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
     <script>
-      let items = document.querySelectorAll(".carousel .carousel-item");
-
-      items.forEach((el) => {
-        const minPerSlide = 3;
-        let next = el.nextElementSibling;
-        for (var i = 1; i < minPerSlide; i++) {
-          if (!next) {
-            next = items[0];
-          }
-          let cloneChild = next.cloneNode(true);
-          el.appendChild(cloneChild.children[0]);
-          next = next.nextElementSibling;
-        }
+      $(document).ready(function () {
+        const owlCarousel = $(".owl-carousel").owlCarousel({
+          center: false,
+          items: 1,
+          loop: true,
+          margin: 20,
+          dots: false,
+          nav: true,
+          navText: [
+            `<svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="16" cy="16" r="15.5" fill="white" stroke="#C4C4C4" />
+            <path
+              d="M18.5 21L13.5 16L18.5 11"
+              stroke="#222222"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+`,
+            `<svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="16" cy="16" r="16" fill="#5CB85F" />
+            <rect
+              width="20"
+              height="20"
+              transform="translate(6 6)"
+              fill="#5CB85F"
+            />
+            <path
+              d="M13.5 21L18.5 16L13.5 11"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>`,
+          ],
+          responsive: {
+            768: {
+              center: true,
+              items: 2,
+            },
+          },
+        });
       });
     </script>
   </body>
