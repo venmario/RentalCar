@@ -204,22 +204,27 @@ body {
   width: auto;
 }
 .carousel-card {
-  height: 300px;
+  /* height: 300px; */
   width: 100%;
   background-color: #f1f3ff;
   border-radius: 8px;
   display: flex;
   margin-right: 20px;
+  flex-direction: column;
 }
 
 .carousel-card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70%;
+  width: 100%;
+}
+.carousel-card-rating {
+  text-align: center;
+  margin: 1em 0;
 }
 .carousel-card-content-picture {
-  width: 30%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,6 +268,19 @@ body {
   .sosmed-icons {
     gap: none;
     justify-content: space-between;
+  }
+  .carousel-card {
+    height: 300px;
+    flex-direction: row;
+  }
+  .carousel-card-content {
+    width: 70%;
+  }
+  .carousel-card-rating {
+    text-align: left;
+  }
+  .carousel-card-content-picture {
+    width: 30%;
   }
 }
 /* desktop */
